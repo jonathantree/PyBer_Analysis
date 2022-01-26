@@ -1,22 +1,22 @@
 # PyBer_Analysis
 ## Project Overview
-The overall task of this project was to do do exploratory data analysis and visualization on a mock dataset of ride share data from January to early May of 2019. To visualize the distribution of these data bubble charts, box and whisker plots, and pie charts were made that broke down the data into three city types: urban, suburban, and rural (Figures 1, 2, &3). Some insight gained from this preliminary analysis was that:
+The overall task of this project was to provide exploratory data analysis and visualization on a mock dataset of ride-share data from January to early May of 2019. To visualize the distribution of these data, bubble charts, box and whisker plots, and pie charts were made that broke down the data into three city types: urban, suburban, and rural (Figures 1, 2, &3). Some insight gained from this preliminary analysis was that:
 
-- The driver count is greatest in urban cities, smaller in suburban and rural with some overlap in the average fare price between them. Overall the rural cities have higher fares per ride and urban cities have lower fares per ride (Figure 1).
+- The driver count is greatest in urban cities, smaller in suburban and rural with some overlap in the average fare price between them. Overall, the rural cities have higher fares per ride and urban cities have lower fares per ride (Figure 1).
 - The average number of rides in rural cities is about 4- and 3.5-times lower per city than the urban and suburban cities, respectively (Figure 2).
 - The average fare for rides in the rural cities is about $11 and $5 more per ride than the urban and suburban cities, respectively (Figure 2).
 - The average number of drivers in rural cities is nine to four times less per city than in urban and suburban cities, respectively (Figure 2).
-- The urban cities make up 62.7% and 68.4% of the total fares and total rides respectively; and account for 80.9% of the amount of drivers (Figure 3).
-- Suburban cities account for 30.5% and 26.3% of the total fares and total rides respectively; and 16.5% of the amount of drivers (Figure 3).
-- Rural areas account for 6.8% and 5.3% of the total fares and total rides respectively; and only 2.6% of the amount of drivers (Figure 3).
+- The urban cities make up 62.7% and 68.4% of the total fares and total rides respectively; and account for 80.9% of the number of drivers (Figure 3).
+- Suburban cities account for 30.5% and 26.3% of the total fares and total rides respectively; and 16.5% of the number of drivers (Figure 3).
+- Rural areas account for 6.8% and 5.3% of the total fares and total rides respectively; and only 2.6% of the number of drivers (Figure 3).
 
-#### Figure 1. Buble plots showing the average fares of each city type for the driver counts and total number of rides.
+#### Figure 1. Bubble plots showing the average fares of each city type for the driver counts and total number of rides.
 ![png](Analysis/BubbleSubPlots.jpg)
 
 #### Figure 2. Box and whisker plots of the distribution of number of rides, fares, and number of drivers in each city type
 ![png](Analysis/Box_whisker_subplots1.jpg)
 
-#### Figure 3. Pie charts showing the percentage of toatl fares, total rides, and total drivers by city type
+#### Figure 3. Pie charts showing the percentage of total fares, total rides, and total drivers by city type
 ![png](Analysis/pies1.jpg)
 
 ### Resources Used
@@ -35,7 +35,7 @@ Gathering together a summary of the ride-share metrics, a DataFrame was produced
 
 The code to generate obtain these metrics from the dataset and the resulting DataFrame are shown below.
 
-Adding a layer of time in to the analysis to understand how the the total weekly fares for each city type varied over a given amount of time, a line chart was produced (Figure 4). The code to replicate this analysis is shown below along with Figure 4.
+Adding a layer of time in to the analysis to understand how the total weekly fares for each city type varied over a given amount of time, a line chart was produced (Figure 4). The code to replicate this analysis is shown below along with Figure 4.
 
 ### Deliverable 1:
 
@@ -230,7 +230,7 @@ weeks_df
 </table>
 </div>
 
-### Generate a multiple line plot showing the the total fares for each city type through the time duration specified above.
+### Generate a multiple line plot showing the total fares for each city type through the time duration specified above.
 ```python
 # 8. Using the object-oriented interface method, plot the resample DataFrame using the df.plot() function. 
 
@@ -304,14 +304,14 @@ Conclusions that can be drawn from the summary DataFrame are:
 1. The total number of rides taken in urban cities is 6x greater than in suburban cities and 13x greater than in rural cities.
 2. The total number of drivers in urban cities is nearly 5x greater than in suburban cities and nearly 31x greater than in rural cities.
 3. In terms of the total revenue from fares, the urban cities make up 62.7%, Suburban cities account for 30.5% and Rural areas account for 6.8%.
-4. The average fare between all three city types only has a difference of about $10.00. There are no data for trip distance by city type, but it could be assumed that the higher average fare per ride in rural areas are do to longer transportaion, while the lowest fare per ride in urban areas would be due to shorter transportation distance. The average fare per ride is $26.75 (almost the fare per ride of urban cities, though these rides make up a significant chunk of the distribution) but the standard deviation is $12.11. These metrics indicate that there is no observable difference between the price per ride between the city types. 
-5. Depending on cost of gas and transportation time for the drivers, it appears that it pays well to be a driver in the rural areas with the average fare per driver of $55.49. This is 3.48x greater than a driver in an urban area can make per ride. Given that the average urban driver has more oppertunity to more rides and options, this difference might wash out in the end of the day. To understand the revenue given a work through a total week a driver could make, it is best to reference the line plot in Figure 4.
+4. The average fare between all three city types only has a difference of about $10.00. There are no data for trip distance by city type, but it could be assumed that the higher average fare per ride in rural areas are due to longer transportation distance, while the lowest fare per ride in urban areas would be due to shorter transportation distance. The average fare per ride is $26.75 (almost the fare per ride of urban cities, though these rides make up a significant chunk of the distribution) but the standard deviation is $12.11. These metrics indicate that there is no observable difference between the price per ride between the city types. 
+5. Depending on cost of gas and transportation time for the drivers, it appears that it pays well to be a driver in the rural areas with the average fare per driver of $55.49. This is 3.48x greater than a driver in an urban area can make per ride. Given that the average urban driver has more opportunity to more rides and options, this difference might wash out in the end of the day. To understand the revenue given a work through a total week a driver could make, it is best to reference the line plot in Figure 4.
 
 Conclusions that can be drawn from the line plot in Figure 4:
-To attempt to draw inferences on which city type is best to be a PyBer driver in, the line plot shows the total revenue on a weekly basis over a 4 month span of time. The urban area drivers make more money any given week than their suburban and rural counterparts. Rural drivers make the least amount of money. These totals only reflect the total amount of fares and a better figure to address the average total weekly fare per driver would be best to get at this question. Interestingly, there appear to be some weeks in which rural drivers generate very little in the total fares. This suggests maybe only one or two rides in a given week for those driver based on the average fare per ride of $55.49.
+To attempt to draw inferences on which city type is best to be a PyBer driver in, the line plot shows the total revenue on a weekly basis over a 4-month span of time. The urban area drivers make more money any given week than their suburban and rural counterparts. Rural drivers make the least amount of money. These totals only reflect the total amount of fares and a better figure to address the average total weekly fare per driver would be best to get at this question. Interestingly, there appear to be some weeks in which rural drivers generate very little in the total fares. This suggests maybe only one or two rides in a given week for those drivers based on the average fare per ride of $55.49.
 
 ##### Figure . Multiple Line Chart 
 ![png](Analysis/PyBer_fare_summary.png)
 
 ## Summary
-The overall higher demand for ride-sharing in urban areas has led a a large disparity in the total revenue of fares when compared to those of the suburban and urban areas. A potential factor which may shed more light on this and allow for farte adjustment due to travel time and or travel distance would be to collect that data from each ride to be able to analyze it nest to the previously calculated metrics. The overall weekly revenue of an urban PyBer driver may discourage others from becoming a driver in rural areas. This may result in a ride availability issues. The law of demand says that at higher prices, buyers will demand less of an economic good. Conversly, the law of supply says that at higher prices, sellers will supply more of an economic good. As this applys to the PyBer data, fare adjustment based on the amount of rides and types of rides (short vs long) in a given city type may encourage even more ride-sharing among the poplulation. 
+The overall higher demand for ride-sharing in urban areas has led a a large disparity in the total revenue of fares when compared to those of the suburban and urban areas. A potential factor which may shed more light on this and allow for fare adjustment due to travel time and or travel distance would be to collect that data from each ride to be able to analyze it nest to the previously calculated metrics. The overall weekly revenue of an urban PyBer driver may discourage others from becoming a driver in rural areas. This may result in a ride availability issues. The law of demand says that at higher prices, buyers will demand less of an economic good. Conversely, the law of supply says that at higher prices, sellers will supply more of an economic good. As this applies to the PyBer data, fare adjustment based on the number of rides and types of rides (short vs long) in a given city type may encourage even more ride-sharing among the population.
