@@ -1,5 +1,15 @@
 # PyBer_Analysis
 ## Project Overview
+The overall task of this project was to do do exploratory data analysis and visualization on a mock dataset of ride share data from January to early May of 2019. To visualize the distribution of these data bubble charts, box and whisker plots, and pie charts were made that broke down the data into three city types: urban, suburban, and rural (Figures 1, 2, &3). 
+
+#### Figure 1. Buble plots showing the average fares of each city type for the driver counts and total number of rides.
+![png](Analysis/BubbleSubPlots.jpg)
+
+#### Figure 2. Box and whisker plots of the distribution of number of rides, fares, and number of drivers in each city type
+![png](Analysis/Box_whisker_subplots1.jpg)
+
+#### Pie charts showing...
+![png](Analysis/pies.jpg)
 
 ### Resources Used
 
@@ -268,7 +278,7 @@ plt.savefig("Analysis/PyBer_fare_summary.png")
 
 ### Deliverable #2 Result
 
-##### Figure 1. Multiple Line Chart 
+##### Figure . Multiple Line Chart 
 ![png](Analysis/PyBer_fare_summary.png)
 
 ## Summary
