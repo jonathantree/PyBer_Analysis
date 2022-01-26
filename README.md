@@ -1,6 +1,14 @@
 # PyBer_Analysis
 ## Project Overview
-The overall task of this project was to do do exploratory data analysis and visualization on a mock dataset of ride share data from January to early May of 2019. To visualize the distribution of these data bubble charts, box and whisker plots, and pie charts were made that broke down the data into three city types: urban, suburban, and rural (Figures 1, 2, &3). 
+The overall task of this project was to do do exploratory data analysis and visualization on a mock dataset of ride share data from January to early May of 2019. To visualize the distribution of these data bubble charts, box and whisker plots, and pie charts were made that broke down the data into three city types: urban, suburban, and rural (Figures 1, 2, &3). Some insight gained from this preliminary analysis was that:
+
+- The driver count is greatest in urban cities, smaller in suburban and rural with some overlap in the average fare price between them. Overall the rural cities have higher fares per ride and urban cities have lower fares per ride (Figure 1).
+- The number of rides in rural cities is about 4- and 3.5-times lower per city than the urban and suburban cities, respectively (Figure 2).
+- The average fare for rides in the rural cities is about $11 and $5 more per ride than the urban and suburban cities, respectively (Figure 2).
+- The average number of drivers in rural cities is nine to four times less per city than in urban and suburban cities, respectively (Figure 2).
+- The urban cities make up 62.7% and 68.4% of the total fares and total rides respectively; and account for 80.9% of the amount of drivers (Figure 3).
+- Suburban cities account for 30.5% and 26.3% of the total fares and total rides respectively; and 16.5% of the amount of drivers (Figure 3).
+- Rural areas account for 6.8% and 5.3% of the total fares and total rides respectively; and only 2.6% of the amount of drivers (Figure 3).
 
 #### Figure 1. Buble plots showing the average fares of each city type for the driver counts and total number of rides.
 ![png](Analysis/BubbleSubPlots.jpg)
@@ -8,12 +16,27 @@ The overall task of this project was to do do exploratory data analysis and visu
 #### Figure 2. Box and whisker plots of the distribution of number of rides, fares, and number of drivers in each city type
 ![png](Analysis/Box_whisker_subplots1.jpg)
 
-#### Pie charts showing...
-![png](Analysis/pies.jpg)
+#### Figure 3. Pie charts showing the percentage of toatl fares, total rides, and total drivers by city type
+![png](Analysis/pies1.jpg)
 
 ### Resources Used
+- Data : 
+ - Resources/city_data.csv
+ - Resources/ride_data.csv
+- Software: Python 3.7.6, Pandas 1.3.5, NumPy 1.20.3, SciPy 1.7.3
 
 ## Overview of the Analysis
+Gathering together a summary of the ride-share metrics, a DataFrame was produced to highlight the following: 
+- Total Rides	
+- Total Drivers	
+- Total Fares	
+- Average Fare per Ride	
+- Average Fare per Driver.
+
+The code to generate obtain these metrics from the dataset and the resulting DataFrame are shown below.
+
+Adding a layer of time in to the analysis to understand how the the total weekly fares for each city type varied over a given amount of time, a line chart was produced (Figure 4). The code to replicate this analysis is shown below along with Figure 4.
+
 ### Deliverable 1:
 
 ```python
@@ -83,7 +106,7 @@ jantoapr_df.info()
 weeks_df = jantoapr_df.resample('W').sum()
 weeks_df
 ```
-#### *DataFrame showing the total fares for each city type given a week in the specified duration*
+#### *DataFrame showing the total fares for each city type given a week in the specified duration to be used for plotting*
 - This is the data source for the multiple line plot generated in the code block below
 <table border="1" class="dataframe">
   <thead>
